@@ -1,0 +1,106 @@
+/* sign.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* لون خلفية الصفحة */
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    width: 300px; /* عرض الإطار */
+    margin: 100px auto; /* مركز الإطار أفقيًا */
+    padding: 20px; /* مسافة داخلية للإطار */
+    background: #fff; /* خلفية الإطار */
+    border-radius: 10px; /* زوايا مدورة */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* ظل */
+}
+
+header {
+    font-size: 24px; /* حجم العنوان */
+    margin-bottom: 20px; /* مسافة أسفل العنوان */
+    text-align: center; /* محاذاة العنوان إلى المنتصف */
+}
+
+.field {
+    position: relative; /* موضع نسبي لتحديد مكان العناصر الداخلية */
+    margin-bottom: 15px; /* مسافة أسفل كل حقل */
+}
+
+/* إضافة padding لحقول الإدخال */
+.input-area input[type="text"],
+.input-area input[type="password"] {
+    width: calc(100% - 20px); /* لتفادي تجاوز العرض */
+    padding: 10px; /* مسافة داخلية */
+    border: 1px solid #ccc; /* إطار */
+    border-radius: 5px; /* زوايا مدورة */
+    outline: none; /* إزالة الإطار الافتراضي */
+    font-size: 14px; /* حجم الخط */
+    box-sizing: border-box; /* حساب padding وborder داخل العرض الكلي */
+}
+
+/* المسافة بين الحقول */
+.field {
+    margin: 20px 0; /* مسافة أعلى وأسفل كل حقل */
+}
+
+.icon {
+    position: absolute; /* وضع الأيقونة بشكل مطلق */
+    left: 10px; /* المسافة من اليسار */
+    top: 12px; /* المسافة من الأعلى */
+    color: #999; /* لون الأيقونة */
+}
+
+.error {
+    border-color: red; /* لون الحدود عند وجود خطأ */
+}
+
+.valid {
+    border-color: green; /* لون الحدود عند صحة البيانات */
+}
+
+.error-txt {
+    color: red; /* لون النص عند وجود خطأ */
+    font-size: 12px; /* حجم النص */
+    margin-top: 5px; /* مسافة أعلى النص */
+}
+
+input[type="submit"] {
+    width: 100%; /* عرض الزر كامل */
+    padding: 10px; /* مسافة داخلية للزر */
+    background-color: #007bff; /* لون خلفية الزر */
+    border: none; /* إزالة الإطار */
+    border-radius: 5px; /* زوايا مدورة للزر */
+    color: #fff; /* لون النص */
+    font-size: 16px; /* حجم النص */
+    cursor: pointer; /* شكل المؤشر عند المرور فوق الزر */
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3; /* لون الزر عند المرور فوقه */
+}
+
+.sign-txt {
+    text-align: center; /* محاذاة النص إلى المنتصف */
+    margin-top: 10px; /* مسافة أعلى النص */
+}
+
+.sign-txt a {
+    color: #007bff; /* لون الرابط */
+    text-decoration: none; /* إزالة تحت السطر من الرابط */
+}
+
+.sign-txt a:hover {
+    text-decoration: underline; /* إضافة تحت السطر عند المرور فوق الرابط */
+}
+
+.shake {
+    animation: shake 0.5s; /* تأثير الاهتزاز */
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
